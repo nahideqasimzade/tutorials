@@ -609,8 +609,9 @@ public class Sql {
 //        
 //        s.updateUser(up);
         
-        s.view(2);
-       
-        s.deleteVideo(1);
+        
+    s.acount(1);
+    s.checkEmail("");
+        System.out.println("test");
     }
 }
