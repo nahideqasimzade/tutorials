@@ -429,7 +429,7 @@ filter:alpha(opacity=60); /* For IE8 and earlier */
                     %>
                     <div >
 
-                        <div id="edit" style="position: relative; left: 0; top: 0;">
+                        <div  id="edit" style="width: 150px ;position: relative; left: 0; top: 0;">
                             <img  style="border-radius: 10px;"  width="150" height="180" src="<%=a.getPhoto()%>" style="position: relative; top: 0; left: 0;"/>
                             <a id="editimg" href="user_photo.jsp" style="display: none"><img src="images/editimg.png" style="position: absolute; top: 1px; left: 122px;"/></a>
                         </div>
