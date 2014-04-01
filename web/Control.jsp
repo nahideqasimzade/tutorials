@@ -26,11 +26,11 @@
             Video_like vl = new Video_like();
             vl.setLikes(1);
             vl.setUser_id(Integer.parseInt(session.getAttribute("user_id").toString()));
-            vl.setVideo_id(Integer.parseInt(request.getParameter("v_id")));
+            vl.setVideo_id(Integer.parseInt(request.getParameter("like")));
             s.like(vl);
-            response.sendRedirect("info.jsp?v_id=" + Integer.parseInt(request.getParameter("v_id").toString()));
+            response.sendRedirect("info.jsp?v_id=" + Integer.parseInt(request.getParameter("like").toString()));
         } else {
-            response.sendRedirect("login.jsp");
+            response.sendRedirect("login.jsp?v_id=" + request.getParameter("like"));
         }
     }
 
