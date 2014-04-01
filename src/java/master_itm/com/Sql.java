@@ -30,7 +30,7 @@ public class Sql {
     public void connected() {
         try {
             DriverManager.registerDriver(new Driver());
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/tutorialproject?zeroDateTimeBehavior=convertToNull", "root", "nahide");
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/tutorialproject?zeroDateTimeBehavior=convertToNull", "root", "");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
@@ -596,22 +596,9 @@ public class Sql {
 //        }
 //        
 //        UsersPojo up=new UsersPojo();
-//       
-//        up.setId(1);
-//        up.setFirstname("Vuqar");
-//        up.setLastname("sdsdsds");
-//        up.setMiddlename("aaaa");
-//        up.setPhone_number(1234567);
-//        up.setAddress("bbbbbbb");
-//        up.setEmail("vuqar@gmail.com");
-//        up.setPassword("nnnnnnn");
-//        up.setPhoto("dsds.jpg");
-//        
-//        s.updateUser(up);
-        
-        
-    s.acount(1);
-    s.checkEmail("");
-        System.out.println("test");
+//     
+        for(VideoPojo p : s.videoList()){
+            System.out.println(p.getName()+" "+p.getId());
+        }
     }
 }
